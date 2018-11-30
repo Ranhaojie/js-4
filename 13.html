@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>😔</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="button"></div>
+    <button id="button1">👆</button>
+    <button id="button2">👇</button>
+    <button id="button3">👈</button>
+    <button id="button4">👉</button>
+    <button id="button5">放大</button>
+    <button id="button6">缩小</button>
+    <script>
+        var button = document.querySelector("#button")
+        button.style.background = "blue"
+        button.style.width = "200px"
+        button.style.height = "200px"
+        button.style.margin = "auto"
+        button.style.marginTop = "200px"
+        var button1 = document.getElementById("button1").addEventListener("click",function(){
+            button1.animate({top:'250px'});
+        },false)
+        var button2 = document.getElementById("button2")
+        button2.addEventListener('click',function(){
+            button2.style.transition = "bottom 2s"
+        },false)
+        var button3 = document.getElementById("button3")
+        button3.addEventListener('click',function(){
+            button3.style.transition = "left 2s"
+        },false)
+        var button4 = document.getElementById("button4")
+        button4.addEventListener('click',function(){
+            button4.style.transition = "right 2s"
+        },false) 
+        var button5 = document.getElementById("button5")
+        button5.addEventListener('click',function(){
+            button5.style.transition = "big 2s"
+        },false)  
+        var button6 = document.getElementById("button6")
+        button6.addEventListener('click',function(){
+            button6.style.transition = "short 2s"
+        },false)   
+
+
+    </script>
+
+</body>
+</html>
